@@ -8,3 +8,12 @@ const toggleMenu = () => {
 };
 
 menuToggleButton.addEventListener("click", toggleMenu);
+// REMOVE ACTIVE CLASS FROM ICON ON LINK CLICK
+
+const removeActiveLinkClass = (e) => {
+  if (e.target.classList.contains("list-link")) {
+    menuElement.classList.remove("active");
+    menuToggleButton.classList.remove("active");
+  }
+};
+document.addEventListener("click", removeActiveLinkClass);
