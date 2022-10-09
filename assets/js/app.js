@@ -17,3 +17,22 @@ const removeActiveLinkClass = (e) => {
   }
 };
 document.addEventListener("click", removeActiveLinkClass);
+// ! TOGGLE THEM AND STORE SELECTION WITHIN LOCAL STORAGE
+const themeToggleButton = document.querySelector(".theme-toggle-button");
+const bodyElement = document.body;
+const currentTheme = localStorage.getItem("darkTheme");
+
+if (currentTheme) {
+  bodyElement.classList.add("dark-theme");
+}
+const toggleTheme = () => {
+  bodyElement.classList.toggle("dark-theme");
+};
+
+if (bodyElement.classList.contains("dark-theme")) {
+  localStorage.setItem("darkTheme", "active");
+} else {
+  localStorage.setItem("click", "toggleTheme");
+}
+
+themeToggleButton.addEventListener("click", toggleTheme);
