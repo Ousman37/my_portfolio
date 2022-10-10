@@ -36,3 +36,5 @@ if (bodyElement.classList.contains("dark-theme")) {
 }
 
 themeToggleButton.addEventListener("click", toggleTheme);
+
+// ! SCROLL REVEAL
