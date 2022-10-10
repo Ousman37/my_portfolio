@@ -87,6 +87,23 @@ textarea {
   position: relative;
 }
 
+.section:not(.hero)::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: rotate(-50%, -50%);
+  width: 80vw;
+  height: 80vw;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 101, 188, 0.08) 0%,
+    rgba(255, 101, 188, 0) 100%
+  );
+  z-index: -1;
+}
+
 .has-sparkles::before,
 .has-sparkles-alt::after {
   position: relative;
@@ -100,7 +117,11 @@ textarea {
   background-size: cover;
 }
 
-/* !Header */
+.d-grid {
+  display: grid;
+}
+
+/* !HEADER  SECTION */
 
 .header {
   margin-bottom: 5rem;
@@ -192,7 +213,7 @@ textarea {
   font-weight: bold;
 }
 
-/* !JAVASCRIPT STYLES*/
+/* !JAVASCRIPT STYLES SECTION*/
 
 .active.menu {
   z-index: inherit;
@@ -221,7 +242,7 @@ textarea {
   display: block;
 }
 
-/* !HERO */
+/* !HERO SECTION */
 .title {
   font-family: var(--title-font-family);
   font-weight: 300;
@@ -280,60 +301,108 @@ textarea {
   background: url("../images/sparkle_alt_light.png") center no-repeat;
   background-size: cover;
 }
-/*
 
-/*
+/* !ABOUT DIDI STYLES */
 
-.scroll-top:hover,
-.scroll-top:focus 
-.
-
-/* !Hero section*/
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.dark-theme .has-sparkles::before,
-.dark-theme .has-sparkles::after {
-  background: url("/images/sparkle_light_me.png") center no-repeat;
-  background-size: cover;
+.section-description {
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.has-sparkles-alt::after {
-  content: "";
-  top: 50%;
+.description {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.description-image {
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+  transform: rotate(25deg);
+}
+
+.description-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description-image.has-sparkles::before,
+.description-image.has-sparkles::after {
+  width: 2rem;
+  height: 2rem;
+}
+
+.description-image.has-sparkles::before {
+  top: 2rem;
+  right: 1rem;
+}
+
+.description-image.has-sparkles::after {
+  top: 10rem;
+  right: -1rem;
+}
+
+.tech-stack {
+  max-width: 50rem;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 2.5rem;
+}
+
+.tech-stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tech-stack-item i {
+  font-size: 5rem;
+  opacity: 0.5;
+}
+.dark-theme .tech-stack-item i {
+  opacity: 0.8;
+}
+
+.tech-stack-item::after,
+.tech-stack-item::before {
   position: absolute;
-  width: 5vw;
-  max-width: 5rem;
-  height: 5vw;
-  max-height: 5rem;
-  background: url("/images/sparkle_alt.png") center no-repeat;
-  background-size: cover;
+  top: -1rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
-.dark-theme .has-sparkles-alt::before {
-  background: url("/images/sparkle_alt_light.png") center no-repeat;
-  background-size: cover;
-}*/
+.tech-stack-item::before {
+  content: "";
+  border: 0.2rem solid transparent;
+  border-top-color: var(--dark-color);
+  transform: translateY(0);
+  z-index: 5;
+}
+
+.tech-stack-item::after {
+  content: attr(data-tooltip);
+  width: max-content;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+}
+
+.tech-stack-item:hover::before {
+  opacity: 1;
+  transform: translateY(-0.6rem);
+}
+
+.tech-stack-item:hover::after {
+  opacity: 1;
+  transform: translateY(calc(-100% + - 0.5rem));
+}
 
 /* ! About me styles */
 
