@@ -622,6 +622,7 @@ textarea {
   font-size: 1.4rem;
   opacity: 0.8;
 }
+
 .large-button-container {
   display: flex;
   margin-top: 5rem;
@@ -759,6 +760,29 @@ textarea {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #808694;
+}
+
+@media screen and (min-width: 412px) {
+  .card-image5 {
+    height: 37rem;
+  }
+  .card-image6 img {
+    width: 88%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 414px) {
+  .card-image5 {
+    height: 37rem;
+  }
+  .card-image6 img {
+    width: 88%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
