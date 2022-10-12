@@ -711,7 +711,7 @@ textarea {
   left: 0;
   text-transform: uppercase;
   font-weight: bold;
-  transition: transfrom 25s;
+  transition: transform 25s;
 }
 
 .input input {
