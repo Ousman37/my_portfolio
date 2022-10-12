@@ -38,3 +38,22 @@ if (bodyElement.classList.contains("dark-theme")) {
 themeToggleButton.addEventListener("click", toggleTheme);
 
 // ! SCROLL REVEAL
+
+const sr = ScrollReveal({
+  distance: "50px",
+  duration: 1500,
+  easing: `cubi-bezier(0.68, -0.55, 0.265, 1.55)`,
+});
+
+sr.reveal(`.main-title`, { origin: "left" });
+sr.reveal(`.scroll-reveal-left`, { origin: `left` });
+
+sr.reveal(`.tech-stack-item`, { interval: 250 });
+
+sr.reveal(`.section-title, .section-subtitle-container`, {
+  origin: `top`,
+  interval: 250,
+});
+
+sr.reveal(`.portfolio-card`, { interval: 250 });
+sr.reveal(`.form-container, .footer`, { origin: `top` });
