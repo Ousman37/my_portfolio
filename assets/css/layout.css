@@ -343,56 +343,9 @@ textarea {
   right: -1rem;
 }
 
-/*
-.subtitle-number.has-sparkles::before,
-.subtitle-number.has-sparkles::after {
-  width: 1rem;
-  height: 1rem;
-}
-
-.subtitle-number.has-sparkles::before {
-  top: 12.5rem;
-  right: 32.5rem;
-}
-.subtitle-number.has-sparkles::after {
-  bottom: 309.5rem;
-  left: 7.5rem;
-}
-
-.description-image.has-sparkles::before,
-.description-image.has-sparkles::after {
-  width: 2rem;
-  height: 2rem;
-}
-
-.description-image.has-sparkles::before {
-  top: 2rem;
-  right: 1rem;
-}
-
-.description-image.has-sparkles::after {
-  top: 10rem;
-  right: -1rem;
-}
-
-.description-image.has-sparkles::before,
-.description-image.has-sparkles::after {
-  width: 2rem;
-  height: 2rem;
-}
-
-.description-image.has-sparkles::before {
-  top: 2rem;
-  right: 1rem;
-}
-.description-image.has-sparkles::after {
-  top: 10rem;
-  right: -1rem;
-}*/
-
 .tech-stack {
   max-width: 50rem;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   gap: 2.5rem;
 }
 
@@ -421,9 +374,33 @@ textarea {
   transition: transform 0.5s, opacity 0.5s;
 }
 
+.tech-stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tech-stack-item i {
+  font-size: 5rem;
+  opacity: 0.5;
+}
+.dark-theme .tech-stack-item i {
+  opacity: 0.8;
+}
+
+.tech-stack-item::after,
+.tech-stack-item::before {
+  position: absolute;
+  top: -1rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
 .tech-stack-item::before {
   content: "";
-  border: 1rem solid transparent;
+  border: 0.2rem solid transparent;
   border-top-color: var(--dark-color);
   transform: translateY(0);
   z-index: 5;
@@ -453,6 +430,7 @@ textarea {
   display: inline-block;
   margin-bottom: 5rem;
 }
+
 .section-title {
   font-size: clamp(4rem, 10vw, 8rem);
 }
@@ -474,7 +452,6 @@ textarea {
   justify-content: center;
 }
 
-/*
 .subtitle-number.has-sparkles::before,
 .subtitle-number.has-sparkles::after {
   width: 1rem;
@@ -489,7 +466,7 @@ textarea {
   bottom: -0.5rem;
   left: -0.5rem;
 }
-*/
+
 .section-subtitle {
   font-size: clamp(2rem, 5vw, 4rem);
 }
@@ -646,6 +623,7 @@ textarea {
 }
 .large-button-container {
   display: flex;
+  margin-top: 5rem;
 }
 
 .large-button {
