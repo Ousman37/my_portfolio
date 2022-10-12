@@ -369,6 +369,7 @@ textarea {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 5rem;
 }
 
 .tech-stack-item i {
@@ -656,31 +657,6 @@ textarea {
   text-align: center;
   margin: auto;
   cursor: pointer;
-}
-
-.fancy-border {
-  position: relative;
-  overflow: hidden;
-}
-
-.fancy-border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background: var(--gradient-color);
-  background-size: 50% 100%;
-  z-index: 1;
-}
-
-.fancy-border span {
-  position: relative;
-  z-index: 10;
-  display: inline-block;
-  padding: 0.6rem 1.5rem;
-  background-color: var(--secondary-background-color);
 }
 
 .button-fill {
