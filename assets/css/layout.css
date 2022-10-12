@@ -88,53 +88,15 @@ textarea {
 .has-sparkles::after {
   content: "";
   position: absolute;
-  background: url("/images/sparkle_one.png") center no-repeat;
+  background: url("../images/sparkle.png") center no-repeat;
   background-size: cover;
 }
-
-.inline-image.has-sparkles ::before {
-  width: 1rem;
-  height: 1rem;
-  top: -0.5rem;
-  right: -0.5rem;
-}
-.inline-image.has-sparkles ::after {
-  width: 0.8rem;
-  height: 0.8rem;
-  bottom: 1rem;
-  right: -1.5rem;
-}
-
-/*
-.has-sparkles,
-.has-sparkles-alt {
-  position: relative;
-}
-
-.has-sparkles::before,
-.has-sparkles::after {
-  content: "";
-  position: absolute;
-  background: url("/images/sparkle_one.png") center no-repeat;
-  background-size: cover;
-}
-
-.inline-image.has-sparkles ::before {
-  width: 1rem;
-  height: 1rem;
-  top: -0.5rem;
-  right: -0.5rem;
-}
-.inline-image.has-sparkles ::after {
-  width: 0.8rem;
-  height: 0.8rem;
-  bottom: 1rem;
-  right: -1.5rem;
-}*/
 
 .d-grid {
   display: grid;
 }
+
+/* !Change the color!! */
 
 .section:not(.hero)::before {
   content: "";
@@ -153,7 +115,7 @@ textarea {
   z-index: -1;
 }
 
-/* !Header */
+/* !HEADER  SECTION */
 
 .header {
   margin-bottom: 5rem;
@@ -202,10 +164,10 @@ textarea {
 .fa-toggle-on {
   display: none;
 }
+
 .menu {
   position: absolute;
   right: 1.55rem;
-
   background-color: var(--dark-color);
   color: var(--light-color);
   padding: 0.8rem 1.5rem;
@@ -213,6 +175,7 @@ textarea {
   z-index: -1;
   pointer-events: none;
   transform: scale(0);
+  transform-origin: right;
   transform-origin: right;
   transition: transform 0.25s 0.25s cubic-bezier(1, 0, 0, 1);
 }
@@ -225,6 +188,7 @@ textarea {
 .menu .list {
   opacity: 0;
 }
+
 .menu > .list .list-link {
   text-transform: uppercase;
 }
@@ -236,22 +200,20 @@ textarea {
 
 .list-link:hover,
 .list-link:focus,
-.scroll-top:hover,
 .scroll-top:focus {
   opacity: 0.7;
 }
 
 .list-link span {
   font-weight: bold;
-  color: #fff;
 }
 
-/* !javascript styles*/
+/* !JAVASCRIPT STYLES SECTION*/
 
 .active.menu {
   z-index: inherit;
   pointer-events: inherit;
-  transform: scale(1) translate(4.5rem);
+  transform: scale(1) translateY(4.5rem);
 }
 
 .active.menu > .list {
@@ -259,7 +221,7 @@ textarea {
   transition: opacity 0.1s 0.5s;
 }
 
-.active .fa-solid {
+.active .fa-bars {
   display: none;
 }
 
@@ -274,6 +236,7 @@ textarea {
 .dark-theme .fa-toggle-on {
   display: block;
 }
+/* !Header End!*/
 
 /* !Hero section*/
 .title {
@@ -298,31 +261,30 @@ textarea {
   margin: 0 1.5rem;
 }
 
-/*
 .dark-theme .has-sparkles::before,
 .dark-theme .has-sparkles::after {
-  background: url("../images/sparkle_light_me.png") center no-repeat;
+  background: url("../images/sparkle_light.png") center no-repeat;
   background-size: cover;
 }
 
 .inline-image.has-sparkles::before {
   width: 1rem;
   height: 1rem;
-  top: 7.5rem;
-  right: 12rem;
+  top: -0.5rem;
+  right: -0.5rem;
 }
 
 .inline-image.has-sparkles::after {
   width: 0.8rem;
   height: 0.8rem;
-  bottom: 40rem;
-  right: 12rem;
+  bottom: 1rem;
+  right: -1.5rem;
 }
 
 .has-sparkles-alt::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 5vw;
   max-width: 5rem;
   height: 5vw;
@@ -334,22 +296,29 @@ textarea {
 .dark-theme .has-sparkles-alt::after {
   background: url("../images/sparkle_alt_light.png") center no-repeat;
   background-size: cover;
-}*/
+}
 
 /* ! About me styles */
-
 .section-description {
   gap: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
 .description {
+  font-size: var(--body-font-family);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .text-bold {
   font-weight: bold;
+}
+
+.description-image {
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+  transform: rotate(25deg);
 }
 
 .description-image img {
@@ -357,11 +326,21 @@ textarea {
   height: 100%;
   object-fit: contain;
 }
-.description-image {
-  width: 25rem;
-  height: 25rem;
-  margin: 0 auto;
-  transform: rotate(25deg);
+
+.description-image.has-sparkles::before,
+.description-image.has-sparkles::after {
+  width: 2rem;
+  height: 2rem;
+}
+
+.description-image.has-sparkles::before {
+  top: 2rem;
+  right: 1rem;
+}
+
+.description-image.has-sparkles::after {
+  top: 10rem;
+  right: -1rem;
 }
 
 /*
@@ -653,7 +632,7 @@ textarea {
   background-color: #0b4180;
 }
 
-/* !PORTFOLIO IMAGE CARD END */
+/* !PORTFOLIO IMAGE CARD END*/
 .card-heading {
   color: var(--dark-color);
 }
