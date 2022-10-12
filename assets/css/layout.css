@@ -3,7 +3,8 @@
 /* !BASE STYLES / RESET */
 
 :root {
-  --light-color: #f3f3fe;
+  --light-color: #fff;
+  /*--light-color: #f3f3fe;*/
   --dark-color: #363636;
   --border-top-color: rgba(0, 0, 0, 1);
   --link-hover-color: rgba(255, 255, 255, 2);
@@ -318,6 +319,12 @@ textarea {
   width: 25rem;
   height: 25rem;
   margin: 0 auto;
+  transform: scale(1.05);
+  /*transform: rotate(25deg);*/
+}
+
+.description-image:hover {
+  transform: scale(1.05);
   /*transform: rotate(25deg);*/
 }
 
