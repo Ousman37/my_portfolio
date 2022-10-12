@@ -10,7 +10,14 @@
   --link-hover-color: rgba(255, 255, 255, 2);
   --title-font-family: "Merriweather", serif;
   --body-font-family: "Roboto", serif;
-
+  --gradient-color: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
   --container-padding: 1.5rem;
   --section-vertical-spacing: 8rem;
 }
@@ -649,6 +656,31 @@ textarea {
   text-align: center;
   margin: auto;
   cursor: pointer;
+}
+
+.fancy-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.fancy-border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: var(--gradient-color);
+  background-size: 50% 100%;
+  z-index: 1;
+}
+
+.fancy-border span {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--secondary-background-color);
 }
 
 .button-fill {
