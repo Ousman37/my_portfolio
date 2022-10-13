@@ -750,14 +750,6 @@ input.invalid {
   display: none;
 }
 
-/*
-.form-error {
-  display: none;
-  color: red;
-  font-size: 0.9rem;
-  margin-top: 2px;
-}*/
-
 /* ! footer STYLES*/
 
 .footer-container {
@@ -807,6 +799,21 @@ input.invalid {
     height: 100%;
     object-fit: contain;
     padding: 1rem;
+  }
+  .large-button {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50% !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--title-font-family);
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 414px) {
