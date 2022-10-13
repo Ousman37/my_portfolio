@@ -739,12 +739,24 @@ textarea {
 
 /* !handling error */
 
+input.invalid {
+  border: 1px solid red;
+}
+.error-hint {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+/*
 .form-error {
-  /*7display: none;*/
+  display: none;
   color: red;
   font-size: 0.9rem;
   margin-top: 2px;
-}
+}*/
 
 /* ! footer STYLES*/
 
