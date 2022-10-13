@@ -840,6 +840,22 @@ input.invalid {
     object-fit: contain;
     padding: 1rem;
   }
+  #form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: -16px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+    margin-top: 10rem;
+  }
+  #form-details form input,
+  #form-details form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+  }
 }
 
 @media screen and (min-width: 768px) {
