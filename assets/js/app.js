@@ -65,7 +65,7 @@ const firstName = document.querySelector("#firstName");
 const firstNameError = document.querySelector("#firstNameError");
 const lastName = document.querySelector("#lastName");
 const lastNameError = document.querySelector("#lastNameError");
-const email = document.querySelector("#email");
+const email = document.querySelector("#email_id");
 const emailError = document.querySelector("#emailError_contact_form");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
@@ -87,7 +87,7 @@ function validateForm3(event) {
     lastNameError.style.display = "block";
   }
 
-  if (validateEmail(email.value, 24) === true) {
+  if (validateEmail(email_id.value, 24) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
@@ -115,3 +115,26 @@ function validateEmail(email) {
   const patternMatches = regEx.test(email);
   return patternMatches;
 }
+
+// send email
+
+//const btn = document.querySelector("button");
+//const inputs = document.querySelector("form");
+//btn.addEventListener("click", () => {
+//
+//});
+
+function sendMail() {
+  var params = {
+    firstName: document.getElementById("firstName").value,
+    lastName: document.getElementById("lastName").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message"),
+  };
+  emailjs
+    .send("service_8ij8mtu", "template_9a6r3mr", params)
+    .then(function (res) {
+      alert("The email successfully sent!", res.status);
+    });
+}
+sendMail();
