@@ -707,6 +707,15 @@ textarea {
   color: #ff7575;
   transform: translateY(-0.8rem);
 }
+
+/* !handling error */
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
 /* ! footer STYLES*/
 
 .footer-container {

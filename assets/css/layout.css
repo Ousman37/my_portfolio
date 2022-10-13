@@ -737,6 +737,15 @@ textarea {
   transform: translateY(-0.8rem);
 }
 
+/* !handling error */
+
+.form-error {
+  /*7display: none;*/
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
 /* ! footer STYLES*/
 
 .footer-container {
@@ -830,6 +839,8 @@ textarea {
   .description-image {
     width: 30rem;
     height: 30rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
   }
   .portfolio-cards {
     display: grid;

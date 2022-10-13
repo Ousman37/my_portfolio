@@ -258,19 +258,27 @@
 
           <div class="scroll-reveal-right">
             <div class="description-image has-sparkles">
-             <img src="./assets/images/get_in_touch1.png" alt="hands on  MacBook computer">
+             <img src="./assets/images/get_touch.png" alt="hands on  MacBook computer">
             </div>
           </div>
         </div>
 
        <div class="form-container">
-          <form action="" class="contact-from">
+          <form action="" class="contact-from" id="contactForm">
             <div class="input-group">
 
-                <div class="input">
-                   <input type="text" id="name" required>
-                   <label for="name" class="input-label">Name<span 
+              <div class="input">
+                   <input type="text" id="firstName" required>
+                   <label for="name" class="input-label">First name <span 
                    class="reguired-field">*</span> </label>
+                    <div class="form-error" id="firstNameError">Please enter your first name</div>
+              </div>
+
+              <div class="input">
+                  <input type="text" id="lastName" required>
+                   <label for="name" class="input-label">Last name <span 
+                   class="reguired-field">*</span> </label>
+                    <div class="form-error" id="lastNameError">Your last name must be at least 4 characters</div>
               </div>
 
 
@@ -278,6 +286,7 @@
                  <input type="text" id="email" required>
                  <label for="email" class="input-label">Email<span 
                  class="reguired-field">*</span> </label>
+                  <div class="form-error" id="emailError">Please enter a valid email address</div>
                  </div>
                  </div>
 
@@ -285,6 +294,7 @@
                    <input type="text" id="message" required>
                    <label for="message" class="input-label">Message<span 
                    class="reguired-field">*</span> </label>
+                   <div class="form-error" id="messageError">Please enter a valid email address</div>
                 </div>
 
               <button type="submit" class="button form-button button-fill">
