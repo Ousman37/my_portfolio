@@ -134,7 +134,7 @@ function sendMail() {
   emailjs
     .send("service_8ij8mtu", "template_9a6r3mr", params)
     .then(function (res) {
-      alert("The email successfully sent!", res.status);
+      //alert("The email successfully sent!", res.status);
     });
 }
 sendMail();
