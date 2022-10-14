@@ -42,6 +42,8 @@ Inserting a link
 
 
 ## Contact
+[My Github page] https://www.instagram.com/codewith_ethmane/
+
 [My LinkedIn page] https://www.linkedin.com/in/ethmane-didi-34885844/
 
 [My Github page] https://github.com/Ousman37
