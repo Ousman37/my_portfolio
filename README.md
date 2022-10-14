@@ -4,7 +4,9 @@
 
 ## Description
 
-Here  are My ##showcase   ##projcets that worked on  throughout the first year of the Noroff Front-End development . 
+## showcase
+
+My projcets that worked on  throughout the first year of the Noroff Front-End development . 
 
 ## Built With
 
@@ -25,7 +27,7 @@ Here  are My ##showcase   ##projcets that worked on  throughout the first year o
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Ousman37/Cross-course_project_Redesign.git
+git clone https://github.com/Ousman37/my_portfolio
 ```
 
 2. Install the dependencies:
