@@ -1,10 +1,10 @@
-# Semester  Cross Course Project - Noroff
+# My personal portfolio
 
 ![crosscourseproject](https://github.com/Ousman37/my_portfolio/blob/main/Screenshot%202022-10-14%20at%2009.34.50.png)
 
 ## Description
 
-This project was completed in stages throughout the first year of the Noroff Front-End development course as part of the course work and underwent many changes, initially the site being just HTML , CSS  later on adding some functionality sure as shooping cart with  javascript. finally having integrated wordpress api called it with javascript.
+Here  are My ##showcase   ##projcets that worked on  throughout the first year of the Noroff Front-End development . 
 
 ## Built With
 
@@ -14,11 +14,7 @@ This project was completed in stages throughout the first year of the Noroff Fro
 
 - JavaScript
 
-## WordPress installation
 
-- Headless CMS
-- WordPress REST API to 
-- Fetching  the data
 
 
 
@@ -40,7 +36,7 @@ npm install
 
 Inserting a link 
 
-[Home](https://tiny-sunburst-0d99af.netlify.app/index.html "netlify.app")
+[Home](https://sparkly-muffin-8222ec.netlify.app/ "netlify.app")
 
 
 ## Contact
