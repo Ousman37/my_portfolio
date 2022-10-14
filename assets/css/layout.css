@@ -934,6 +934,92 @@ input.invalid {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .card-image1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-image1 {
+    height: 31rem;
+  }
+  .card-image5 {
+    height: 39rem;
+  }
+  .card-image5 img {
+    width: 82%;
+  }
+  .card-image2 {
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-image1 img {
+    width: 80%;
+    height: 100%;
+  }
+  .card-image1 {
+    height: 31rem;
+  }
+  .card-image5 {
+    height: 39rem;
+  }
+  .card-image5 img {
+    width: 82%;
+  }
+  .card-image2 {
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card-image1 img {
+    width: 80%;
+    height: 100%;
+  }
+  .card-image1 {
+    height: 33rem;
+  }
+  .card-image5 {
+    height: 39rem;
+  }
+  .card-image5 img {
+    width: 82%;
+    height: 100%;
+  }
+  .card-image2 img {
+    width: 82%;
+    height: 80%;
+  }
+
+  .card-image2 {
+    height: 25rem;
+  }
+
+  .card-image3 img {
+    width: 75%;
+    height: 100%;
+  }
+  .card-image3 {
+    height: 30rem;
+  }
+
+  .card-image4 img {
+    width: 80%;
+    height: 100%;
+  }
+  .card-image4 {
+    height: 30rem;
+  }
+  .card-image5 img {
+    width: 70%;
+    height: 90%;
+  }
+  .card-image5 {
+    height: 44rem;
+  }
+}
+
 @media screen and (min-width: 1295px) {
   .container {
     max-width: 96rem;
