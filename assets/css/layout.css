@@ -159,12 +159,13 @@ textarea {
 }
 
 .icon-button {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
 }
 
 .icon-button i {
+  font-size: 4rem;
   margin: auto;
 }
 
@@ -202,7 +203,7 @@ textarea {
 }
 
 .list-link {
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   color: var(--light-color);
 }
 
@@ -323,22 +324,24 @@ textarea {
 }
 
 .description-image {
-  width: 25rem;
-  height: 25rem;
+  width: 30rem;
+  height: 30rem;
   margin: 0 auto;
-  transform: scale(1.05);
+
   /*transform: rotate(25deg);*/
 }
 
-.description-image:hover {
-  transform: scale(1.05);
-  /*transform: rotate(25deg);*/
+.description {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: inherit;
 }
 
 .description-image img {
-  width: 100%;
+  width: 75%;
   height: 100%;
-  border-radius: 60%;
+  border: 4px solid seashell;
+
   object-fit: contain;
 }
 
