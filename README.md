@@ -1,6 +1,6 @@
 # Semester  Cross Course Project - Noroff
 
-![crosscourseproject](https://github.com/Ousman37/Cross-course_project_Redesign/blob/main/images/hero.jpg)
+![crosscourseproject](https://github.com/Ousman37/my_portfolio/blob/main/Screenshot%202022-10-14%20at%2009.34.50.png)
 
 ## Description
 
